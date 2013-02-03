@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity" >
+
+    <FrameLayout android:id="@+id/layout_header" style="@style/LayoutHeader.Pos">
+        <include layout="@layout/header" />
+    </FrameLayout>
+    <FrameLayout android:id="@+id/layout_infoarea" style="@style/LayoutInfoArea.Pos">
+        <include layout="@layout/infoarea" />
+    </FrameLayout>
+    <FrameLayout android:id="@+id/layout_maparea" style="@style/LayoutMapArea.Pos">
+        <View style="@style/LayoutMapAreaBorder" />
+        <include layout="@layout/maparea" />
+    </FrameLayout>
+    
+</RelativeLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/infoarea"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TableLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="1"
+            android:stretchColumns="1" >
+
+            <TableRow android:id="@+id/row_accuracy" >
+
+                <TextView
+                    style="@style/WhereText.Label"
+                    android:text="Source:" />
+
+                <TextView
+                    android:id="@+id/v_accuracy"
+                    style="@style/WhereText.Value.Inactive"
+                    android:text="@string/notready" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/WhereText.Label"
+                    android:text="Phones:" />
+
+                <TextView
+                    android:id="@+id/v_area_code"
+                    style="@style/WhereText.Value.Inactive"
+                    android:text="@string/notready" />
+            </TableRow>
+
+            <TableRow android:id="@+id/row_postal_code" >
+
+                <TextView
+                    style="@style/WhereText.Label"
+                    android:text="@string/label_postal_code" />
+
+                <TextView
+                    android:id="@+id/v_postal_code"
+                    style="@style/WhereText.Value.Inactive"
+                    android:text="@string/notready" />
+            </TableRow>
+
+            <TableRow android:id="@+id/row_city" >
+
+                <TextView
+                    android:id="@+id/city_label"
+                    style="@style/WhereText.Label"
+                    android:text="City:" />
+
+                <RelativeLayout>
+
+                    <Button
+                        android:id="@+id/city_button"
+                        style="@style/WhereText.Button.Folded"
+                        android:layout_alignBaseline="@id/city_label"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="4.0sp"
+                        android:paddingLeft="4.0dip"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/v_city"
+                        style="@style/WhereText.Value.Inactive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/city_label"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@id/city_button"
+                        android:text="@string/notready" />
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row_city_alt"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/WhereText.Label.Sub"
+                    android:text="Alt. Names:" />
+
+                <TextView
+                    android:id="@+id/v_city_alt"
+                    style="@style/WhereText.Value.Sub"
+                    android:text="@string/notready" />
+            </TableRow>
+
+            <TableRow android:id="@+id/row_street" >
+
+                <TextView
+                    style="@style/WhereText.Label"
+                    android:text="Street:" />
+
+                <TextView
+                    android:id="@+id/v_street"
+                    style="@style/WhereText.Value.Inactive"
+                    android:text="@string/notready" />
+            </TableRow>
+
+            <TableRow android:id="@+id/row_xstreet" >
+
+                <TextView
+                    style="@style/WhereText.Label"
+                    android:text="X-Streets:" />
+
+                <TextView
+                    android:id="@+id/v_xstreet"
+                    style="@style/WhereText.Value.Inactive"
+                    android:text="@string/notready" />
+            </TableRow>
+
+            <TableRow android:id="@+id/row_sub_admin_area" >
+
+                <TextView
+                    style="@style/WhereText.Label"
+                    android:text="@string/label_sub_admin_area" />
+
+                <TextView
+                    android:id="@+id/v_sub_admin_area"
+                    style="@style/WhereText.Value.Inactive"
+                    android:text="@string/notready" />
+            </TableRow>
+
+            <TableRow android:id="@+id/row_admin_area" >
+
+                <TextView
+                    style="@style/WhereText.Label"
+                    android:text="@string/label_admin_area" />
+
+                <TextView
+                    android:id="@+id/v_admin_area"
+                    style="@style/WhereText.Value.Inactive"
+                    android:text="@string/notready" />
+            </TableRow>
+
+            <TableRow android:id="@+id/row_country" >
+
+                <TextView
+                    style="@style/WhereText.Label"
+                    android:text="@string/label_country" />
+
+                <TextView
+                    android:id="@+id/v_country"
+                    style="@style/WhereText.Value.Inactive"
+                    android:text="@string/notready" />
+            </TableRow>
+
+            <TableRow android:id="@+id/row_sunset" >
+
+                <TextView
+                    style="@style/WhereText.Label"
+                    android:text="Sunset:" />
+
+                <TextView
+                    android:id="@+id/v_sunset"
+                    style="@style/WhereText.Value.Inactive"
+                    android:text="@string/notready" />
+            </TableRow>
+
+            <TableRow android:id="@+id/row_sunrise" >
+
+                <TextView
+                    style="@style/WhereText.Label"
+                    android:text="Sunrise:" />
+
+                <TextView
+                    android:id="@+id/v_sunrise"
+                    style="@style/WhereText.Value.Inactive"
+                    android:text="@string/notready" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@drawable/line_gradient_gray" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingRight="4.0dip"
+                android:paddingTop="4.0dip" >
+
+                <ToggleButton
+                    android:id="@+id/button_update"
+                    style="@style/WhereButton"
+                    android:checked="false"
+                    android:textOff="Continuous Updates"
+                    android:textOn="Continuous Updates" />
+            </LinearLayout>
+        </TableLayout>
+    </LinearLayout>
+
+</ScrollView>

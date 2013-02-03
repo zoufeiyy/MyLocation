@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="WhereMap.Map" parent="@style/WhereMap">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="WhereMap.FrameOuter" parent="@style/WhereMap">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+        <item name="android:paddingBottom">0.0dip</item>
+    </style>
+    <style name="WhereMap.FrameInner" parent="@style/WhereMap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="WhereText.MapArea" parent="@style/WhereText">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:paddingRight">2.0dip</item>
+        <item name="android:paddingBottom">0.0dip</item>
+        <item name="android:lineSpacingMultiplier">0.9</item>
+    </style>
+    <style name="LayoutHeader.Pos" parent="@style/LayoutHeader">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">0.0dip</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+    <style name="LayoutInfoArea.Pos" parent="@style/LayoutInfoArea">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_toLeftOf">@id/layout_maparea</item>
+        <item name="android:layout_below">@id/layout_header</item>
+    </style>
+    <style name="LayoutMapArea.Pos" parent="@style/LayoutMapArea">
+        <item name="android:layout_width">210.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">2.0dip</item>
+        <item name="android:layout_below">@id/layout_header</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+</resources>

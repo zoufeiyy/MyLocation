@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1" >
+
+    <TableRow android:id="@+id/mapinfo_row_1" >
+
+        <TextView
+            android:id="@+id/v_latdeg"
+            style="@style/WhereText.MapArea"
+            android:layout_gravity="right"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/v_altitude"
+            style="@style/WhereText.MapArea"
+            android:layout_gravity="right"
+            android:text="" />
+    </TableRow>
+
+    <TableRow android:id="@+id/mapinfo_row_2" >
+
+        <TextView
+            android:id="@+id/v_lngdeg"
+            style="@style/WhereText.MapArea"
+            android:layout_gravity="right"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/v_latlong"
+            style="@style/WhereText.MapArea"
+            android:layout_gravity="right"
+            android:text="@string/notready" />
+    </TableRow>
+
+    <FrameLayout
+        android:id="@+id/latlong_mapframe"
+        style="@style/WhereMap.FrameOuter"
+        android:visibility="gone" >
+
+        <fragment
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/WhereMap.Map"
+            android:id="@+id/map"
+            android:orientation="vertical"
+            android:visibility="visible"
+            class="com.google.android.gms.maps.MapFragment" />
+<!--         <LinearLayout
+            style="@style/WhereMap.FrameInner"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <com.google.android.maps.MapFragment
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/latlong_mapview"
+                style="@style/WhereMap.Map"
+                android:apiKey="@string/mapsApiKey"
+                android:clickable="false"
+                android:enabled="false" />
+        </LinearLayout> -->
+    </FrameLayout>
+
+</TableLayout>

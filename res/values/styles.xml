@@ -1,0 +1,133 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    
+    <style name="LayoutHeader">
+        <item name="android:background">#ff555555</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="LayoutHeaderBorder">
+        <item name="android:background">@drawable/header_border_gradient</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">7.0dip</item>
+    </style>
+    <style name="LayoutInfoArea">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="LayoutMapArea">
+        <item name="android:background">#ff555555</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="LayoutMapAreaBorder">
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="WhereMap.Map" parent="@style/WhereMap">
+        <item name="android:layout_width">200.0dip</item>
+        <item name="android:layout_height">200.0dip</item>
+    </style>
+    <style name="WhereMap" />
+    <style name="WhereMap.FrameOuter" parent="@style/WhereMap">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+    </style>
+    <style name="WhereMap.FrameInner" parent="@style/WhereMap">
+        <item name="android:padding">0.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="WhereText.MapArea" parent="@style/WhereText">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:paddingLeft">4.0dip</item>
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:paddingRight">4.0dip</item>
+        <item name="android:paddingBottom">0.0dip</item>
+        <item name="android:lineSpacingMultiplier">0.9</item>
+    </style>
+    <style name="TextInactive">
+        <item name="android:textColor">#ff888888</item>
+    </style>
+    <style name="TextActive">
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="WhereButton">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:paddingLeft">14.0dip</item>
+        <item name="android:paddingRight">14.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="WhereText">
+        <item name="android:textSize">22.0sp</item>
+    </style>
+    <style name="WhereText.Label" parent="@style/WhereText">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ffcccccc</item>
+        <item name="android:paddingLeft">4.0dip</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingRight">8.0dip</item>
+        <item name="android:paddingBottom">2.0dip</item>
+    </style>
+    <style name="WhereText.Value" parent="@style/WhereText">
+        <item name="android:paddingLeft">4.0dip</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingRight">4.0dip</item>
+        <item name="android:paddingBottom">2.0dip</item>
+    </style>
+    <style name="WhereText.Label.Sub" parent="@style/WhereText.Label">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:paddingLeft">8.0dip</item>
+    </style>
+    <style name="WhereText.Value.Sub" parent="@style/WhereText.Value">
+        <item name="android:textSize">14.0sp</item>
+    </style>
+    <style name="WhereText.Value.Inactive" parent="@style/WhereText.Value">
+        <item name="android:textColor">#ff888888</item>
+    </style>
+    <style name="WhereText.Value.Active" parent="@style/WhereText.Value">
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="WhereText.Value.Extra" parent="@style/WhereText.Value">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ffdddddd</item>
+    </style>
+    <style name="WhereText.Value.Extra.Red" parent="@style/WhereText.Value.Extra">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ffff5555</item>
+    </style>
+    <style name="WhereText.Button" parent="@style/WhereText">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">22.0sp</item>
+        <item name="android:layout_height">22.0sp</item>
+    </style>
+    <style name="WhereText.Button.Folded" parent="@style/WhereText.Button">
+        <item name="android:background">@drawable/expand_down</item>
+    </style>
+    <style name="WhereText.Button.Expanded" parent="@style/WhereText.Button">
+        <item name="android:background">@drawable/expand_up</item>
+    </style>
+    
+</resources>
